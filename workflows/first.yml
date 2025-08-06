@@ -2,12 +2,15 @@ name: My First GitHub Actions
 
 on:
   push:
-  branches: [main]
+    branches: [ "main" ]
   
 jobs:
   build:
    runs-on: ubuntu-latest
    steps:
+   - name: Checkout code
+     uses: actions/checkout@v1
+    
    - name: Run tests
       run: 
        echo "pipeline run sucessfully"
