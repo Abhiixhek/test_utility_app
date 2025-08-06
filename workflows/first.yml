@@ -1,1 +1,12 @@
-.
+name: My First GitHub Actions
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    - name: Run tests
+      run: |
+       echo "pipeline run sucessfully"
+       echo "11111111111111111112222222222222222222222222233333333333333333333333333"
